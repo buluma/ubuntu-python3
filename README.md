@@ -1,8 +1,6 @@
-# fnndsc/ubuntu-python3
+# buluma/ubuntu-python3
 
-[![Build](https://github.com/FNNDSC/ubuntu-python3/workflows/Build/badge.svg)](https://github.com/FNNDSC/ubuntu-python3/actions)
-
-https://hub.docker.com/r/fnndsc/ubuntu-python3/tags
+[![Build](https://github.com/buluma/ubuntu-python3/workflows/Build/badge.svg)](https://github.com/buluma/ubuntu-python3/actions)
 
 A base docker image for `python3` in `ubuntu:latest`
 
@@ -71,7 +69,7 @@ https://github.com/docker/buildx#docker-ce
 ```bash
 docker run --rm --privileged aptman/qus -s -- -p ppc64le
 docker buildx create --name moc_builder --use
-docker buildx build -t fnndsc/ubuntu-python3 --platform linux/amd64,linux/ppc64le .
+docker buildx build -t buluma/ubuntu-python3 --platform linux/amd64,linux/ppc64le .
 # clean up
 docker buildx rm
 docker run --rm --privileged aptman/qus -- -r
