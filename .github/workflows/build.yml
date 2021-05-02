@@ -1,13 +1,13 @@
 # Build the Docker image and give it two tags (examples):
 #
-# - fnndsc/ubuntu-python3:latest
-# - fnndsc/ubuntu-python3:ubuntu20.04-python3.8.5
+# - buluma/ubuntu-python3:latest
+# - buluma/ubuntu-python3:ubuntu20.04-python3.8.5
 #
 # Then patches the image to change ENTRYPOINT to CMD.
 # These are tagged:
 #
-# - fnndsc/python:latest
-# - fnndsc/python:3.8.5-ubuntu20.04
+# - buluma/python:latest
+# - buluma/python:3.8.5-ubuntu20.04
 #
 # Perfectionist wants to do a context-less Dockerfile-from-stdin
 # build to shave off KB from our build, but there might not be a
@@ -87,7 +87,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      - name: Build fnndsc/ubuntu-python3
+      - name: Build buluma/ubuntu-python3
         uses: docker/build-push-action@v2
         with:
           push: true
@@ -95,7 +95,7 @@ jobs:
           file: ./Dockerfile
           tags: ${{ steps.determine.outputs.oldnames }}
           platforms: linux/amd64,linux/ppc64le,linux/arm64
-      - name: Build fnndsc/python
+      - name: Build buluma/python
         uses: docker/build-push-action@v2
         with:
           push: true
