@@ -1,6 +1,4 @@
-# Docker file for a slim Ubuntu-based Python3 image
-
-FROM ubuntu:latest
+FROM buluma/ubuntu:latest
 MAINTAINER buluma "me@buluma.me.ke"
 
 ENV DEBIAN_FRONTEND=noninteractive
