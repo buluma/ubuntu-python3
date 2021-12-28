@@ -1,4 +1,4 @@
-FROM buluma/ubuntu:latest
+FROM ubuntu:latest
 MAINTAINER buluma "me@buluma.me.ke"
 
 ENV DEBIAN_FRONTEND=noninteractive
