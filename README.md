@@ -1,6 +1,6 @@
 # buluma/ubuntu-python3
 
-[![Build](https://github.com/buluma/ubuntu-python3/workflows/Build/badge.svg)](https://github.com/buluma/ubuntu-python3/actions)
+[![Build and Push Container](https://github.com/buluma/ubuntu-python3/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/buluma/ubuntu-python3/actions/workflows/build.yml)
 
 A base docker image for `python3` in `ubuntu:latest`
 
