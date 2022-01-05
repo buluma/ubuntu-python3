@@ -1,4 +1,4 @@
-# buluma/ubuntu-python3
+# ubuntu-python3
 
 [![Build and Push Container](https://github.com/buluma/ubuntu-python3/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/buluma/ubuntu-python3/actions/workflows/build.yml)
 
