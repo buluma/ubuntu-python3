@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-MAINTAINER buluma "me@buluma.me.ke"
+MAINTAINER Michael Buluma "me@buluma.me.ke"
+LABEL build_date="2022-06-07"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
