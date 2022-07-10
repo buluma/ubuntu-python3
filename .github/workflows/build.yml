@@ -19,7 +19,7 @@ name: Build and Push Container
 
 on:
   schedule:
-    - cron: '30 5,17 * * *'  # every day at 5:30 and 17:30 UTC
+    - cron: '30 5,17 * * 3,6'  # every day at 5:30 and 17:30 UTC / Wed + Sat
   push:
     branches: [master]
   workflow_dispatch:
